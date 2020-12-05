@@ -1,0 +1,112 @@
+.button {
+    cursor: pointer;
+    letter-spacing: 0.2125rem;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 
+      background 5s cubic-bezier(0.19, 1, 0.22, 1),
+      border 1s cubic-bezier(0.19, 1, 0.22, 1),
+      color 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    user-select: none;
+    margin-bottom: 30px;
+  }
+  
+  .button a {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+  
+  .button .mask {
+    background-color: #00e0d0;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100px;
+    position: absolute;
+    transform: translate3d(-120%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+    transition: all 4.1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 1200px;
+  }
+  
+  .button .shift {
+    display: inline-block;
+    transition: all 4.1s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 5px rgba(0, 224, 208, 1);
+    transition: background 0s;
+  }
+  
+  .button:hover a {
+    border-color: #00e0d0;
+    color: #00e0d0;
+  }
+  
+  .button:hover .mask {
+    background-color: #fff;
+    transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  }
+  
+  .button:hover .shift {
+    transform: translateX(5px);
+  }
+  
+  .button:active {
+    background-color: #fff;
+  }
+  
+  .button:active a {
+    color: #202020;
+  }
+  
+  body.show {
+    background-color: #282828;
+  }
+
+
+
+.section__header {
+    width: 100% ;
+}
+
+.visual__text p {
+  font-size: 20px;
+}
+
+
+.footer__copyright {
+  padding: 20px 0;
+
+  background-color: #3d2f63;
+}
+
+.copyright {
+  padding: 20px 0;
+  background-color: #3d2f63;
+}
+
+.copyright__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.copyright__text span {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.hr-dashed {
+	margin: 60px 0;
+	padding: 0;
+  height: 0;
+  
+	border: none;
+  border-top: 2px dashed #ddd;
+}
