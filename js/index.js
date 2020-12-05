@@ -52,9 +52,7 @@ if(index == 5 && direction =='up'){
 
 }
 
-
 	}});
 
 });
-
 

@@ -83,6 +83,7 @@ padding: 0 30px;
 }
 
 
+
 /* Стили самого первого слайда */
 
 
@@ -292,7 +293,7 @@ form p{
 }
 
 .contact__form {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .contact__form .p2{
@@ -307,11 +308,16 @@ padding-bottom: 40px ;
   font-size: 26px;
 }
 .contact__wrapper p {
-  font-size: 16px;
+  font-size: 18px;
   padding: 0;
   margin: 0 auto;
 }
 
+
+.request__svg {
+  width: 70px;
+  height: 70px;
+}
 
 .line {
 	margin: 20px 0;
