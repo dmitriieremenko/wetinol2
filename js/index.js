@@ -5,10 +5,33 @@ $(document).ready(function() {
 		alert("Submited!");
 		e.preventDefault();
 	  })
-	window.location.hash
-	console.log(window.location.hash)
+
+		
+	
+	
 	$('#pagepiling').pagepiling( { 		
-		onLeave: function(index, nextIndex, direction){
+		onLeave: function(asd, index, direction){
+			if(index == 2){
+				document.querySelector(".header") .classList.add("header__section2");
+			}
+
+			if(index == 1){
+				document.querySelector(".header") .classList.remove("header__section2");
+			}
+
+			if(index == 3){
+				document.querySelector(".header") .classList.remove("header__section2");
+			}
+			
+			if(index == 4){
+				document.querySelector(".header") .classList.add("header__section2");
+			}
+
+			if(index == 5){
+				document.querySelector(".header") .classList.remove("header__section2");
+			}
+
+
 // if(index == 1 && direction =='down'){
 // 	document.querySelector(".header") .classList.add("header__section2")
 // 	console.log("сработало")
@@ -62,7 +85,33 @@ $(document).ready(function() {
 
 	}});
 
+
+	if(window.location.hash == "#slide-five") {
+		five()
+	  }
+
+	if(window.location.hash == "#slide-four") {
+		four()
+	}
+
+	if(window.location.hash == "#slide-three") {
+		three()
+	}
+
+	if(window.location.hash == "#slide-two") {
+		two()
+	}
+	
+	if(window.location.hash == "#slide-one") {
+		one()
+	}
+	
+
+
 });
+
+
+
 
 
 function one() {$.fn.pagepiling.moveTo(1);}

@@ -170,15 +170,13 @@ padding: 0 30px;
   /* Стили header */
 
   .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: #3d2f63;
   }
 
   .header__section2 .nav a {
